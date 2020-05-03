@@ -1,5 +1,6 @@
 package com.pradipta.polly.model.user;
 
+import com.pradipta.polly.audit.UserDateAudit;
 import com.pradipta.polly.model.role.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -34,7 +35,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class User {
+public class User extends UserDateAudit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
