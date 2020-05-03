@@ -1,4 +1,4 @@
-package com.pradipta.polly.model.audit;
+package com.pradipta.polly.audit;
 
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
